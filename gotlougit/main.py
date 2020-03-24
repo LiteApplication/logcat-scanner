@@ -1,8 +1,7 @@
 import sys
 
-def removeTimeStamp():
-
-    f = sys.stdin.read().split('\n')
+def removeTimeStamp(f: str) -> str:
+    #f = sys.stdin.read().split('\n')
     f.remove('')
     
     out = ""
