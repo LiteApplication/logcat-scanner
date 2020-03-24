@@ -26,7 +26,6 @@ def compareLog(log1,log2):
     for line in log1:
         if line in log2 and line not in repeats:
             repeats.append(line)
-            print(line)
     return repeats
 
 
