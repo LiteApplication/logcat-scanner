@@ -2,7 +2,7 @@ import sys
 
 def removeTimeStamp(f: str) -> str:
     #f = sys.stdin.read().split('\n')
-    f.remove('')
+    #f.remove('')
     
     out = ""
 
