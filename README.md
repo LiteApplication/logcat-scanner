@@ -1,4 +1,4 @@
 # logcat-scanner
 A little program to solve big bugs
-## Ideas
+## Ideas ?
 Add them into IDEAS.md
