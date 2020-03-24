@@ -4,8 +4,10 @@ from gotlougit import main
 
 ###########################
 version = 0.2
-LOG_FILE_1 = "logcat_1.log.txt"
-LOG_FILE_2 = "logcat_2.log.txt"
+#LOG_FILE_1 = "logcat_1.log.txt"
+LOG_FILE_1 = input("Logfile 1 : ")
+#LOG_FILE_2 = "logcat_2.log.txt"
+LOG_FILE_2 = input("Logfile 2 : ")
 LOG_FILE_COMMON = "logcat_c.log.txt"
 ###########################
 
