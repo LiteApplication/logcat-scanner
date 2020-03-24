@@ -1,6 +1,6 @@
 import sys
 
-def removeTimeStamp(log: str) -> str:
+def removeTimeStamp(log):
     #f = sys.stdin.read().split('\n')
     #f.remove('')
     f = log.split('\n')
