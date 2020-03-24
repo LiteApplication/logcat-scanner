@@ -16,5 +16,5 @@ def removeTimeStamp(log):
         for j in x:
             y += j + ' '
         out += y + '\n'
-    return out
+    return out.splitlines()
 
