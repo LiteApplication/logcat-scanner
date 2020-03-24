@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
-from gotlougit import main
+from gotlougit import main as m
 
 ###########################
 version = 0.2
-#LOG_FILE_1 = "logcat_1.log.txt"
-LOG_FILE_1 = input("Logfile 1 : ")
-#LOG_FILE_2 = "logcat_2.log.txt"
-LOG_FILE_2 = input("Logfile 2 : ")
+LOG_FILE_1 = "logcat_1.log.txt"
+LOG_FILE_2 = "logcat_2.log.txt"
 LOG_FILE_COMMON = "logcat_c.log.txt"
 ###########################
 
@@ -20,10 +18,17 @@ log2_file = open(LOG_FILE_2, 'r')
 log2 = log2_file.read()
 log2_file.close()
 
-log1 = main.removeTimeStamp(log1)
-log2 = main.removeTimeStamp(log2)
+log1 = m.removeTimeStamp(log1)
+log2 = m.removeTimeStamp(log2)
 
-common = main.compareLog(log1, log2)
+log1 = log1.split('\n')
+log2 = log2.split('\n')
+
+common = m.compareLog(log1, log2)
+
+for i in range(len(common)):
+    common[i] += '\n'
+
 with open(LOG_FILE_COMMON, "w") as f:
     f.writelines(common)
 print("Done.")
