@@ -22,7 +22,7 @@ log1 = main.removeTimeStamp(log1)
 log2 = main.removeTimeStamp(log2)
 
 common = main.compareLog(log1, log2)
-with open(LOG_FILE_COMMON, "r") as f:
+with open(LOG_FILE_COMMON, "w") as f:
     f.writelines(common)
 print("Done.")
 
